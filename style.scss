@@ -9,7 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1,h2{
@@ -155,11 +155,12 @@ h3{
 
     .main{
         grid-template-columns: 1fr;
+        margin-inline: 1rem;
 
         .left{
-            padding-block: 1.75rem;
+            padding-block: 1.5rem;
             &__circle{
-                margin-block: 1.75rem;
+                margin-block: 1.5rem;
                 width: 140px;
                 height: 140px;
             }
@@ -169,23 +170,15 @@ h3{
         }
 
         .right{
-            padding-block: 1.75rem ;
+            padding-block: 1.5rem ;
 
             &__heading{
-                font-size: 1.25rem;
+                font-size: 1rem;
                 margin-bottom: 0.5rem;
             }
             &__button{
                 margin-top: 0.5rem;
             }
-        }
-    }
-}
-
-@media (max-width:35em){
-    .main{
-        .left{
-            border-radius: 0 0 2rem 2rem;
         }
     }
 }
