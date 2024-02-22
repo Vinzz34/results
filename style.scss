@@ -1,0 +1,191 @@
+@use 'resets';
+@use 'variables' as *;
+
+body{
+    background-color: $white;
+    font-family: $ff;
+    font-size: $fs-normal;
+    font-weight: $fw-normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1,h2{
+    color: $white;
+}
+
+h1{
+    font-size: $fs-large;
+    font-weight: $fw-bolder;
+}
+
+h2{
+    font-weight: $fw-bold;
+}
+
+h3,p{
+    color: $lavender;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+.main{
+    max-width: 735px;
+    border-radius: 2rem;
+    box-shadow: hsla(227,77,95) 0px 8px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .left{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem 3.75rem;
+        background: $backgroundGradient;
+        border-radius: 2rem;
+
+        &__circle{
+            margin-block: 2.5rem;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: $circleGradient;
+            display: grid;
+            place-content: center;
+        }
+
+        &__result{
+            margin-bottom: 1.375rem;
+        }
+    }
+
+    .right{
+        padding: 2.75rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex: 1;
+        &__heading{
+            color: $darkBlue;
+            margin-bottom: 0.75rem;
+        }
+
+        &__categories{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 1rem;
+
+            &--reaction{
+                color: $red;
+                background-color: hsla(0, 100%, 67%,0.1);
+            }
+
+            &--memory{
+                color: $orange;
+                background-color: hsla(39, 100%, 56%,0.1);
+            }
+
+            &--verbal{
+                color: $green;
+                background-color: hsla(166, 100%, 37%,0.1);
+            }
+
+            &--visual{
+                color: $blue;
+                background-color: hsla(234, 85%, 45%,0.1);
+            }
+
+        }
+
+        &__details{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        &__score{
+            color: $darkBlue;
+        }
+        
+        &__total{
+            color: hsla(224, 30%, 27%,0.5);
+        }
+
+        &__button{
+            background-color: $darkBlue;
+            color: $paleBlue;
+            padding-block: 1rem;
+            border: none;
+            border-radius: 2rem;
+            margin-top: 1.125rem;
+            font-weight: $fw-bold;
+            cursor: pointer;
+
+            &:hover{
+                background-image: $backgroundGradient;
+            }
+        }
+    }
+}
+
+@media (max-width:50em){
+
+    $fs-normal:1rem;
+    $fs-large:2.5rem;
+
+    h1{
+        font-size: $fs-large;
+    }
+
+    h2,h3{
+        font-size: 1.25rem;
+    }
+    
+    p{
+        font-size: $fs-normal;
+    }
+
+    .main{
+        grid-template-columns: 1fr;
+
+        .left{
+            padding-block: 1.75rem;
+            &__circle{
+                margin-block: 1.75rem;
+                width: 140px;
+                height: 140px;
+            }
+            &__result{
+                margin-bottom: 0.75rem;
+            }
+        }
+
+        .right{
+            padding-block: 1.75rem ;
+
+            &__heading{
+                font-size: 1.25rem;
+                margin-bottom: 0.5rem;
+            }
+            &__button{
+                margin-top: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:35em){
+    .main{
+        .left{
+            border-radius: 0 0 2rem 2rem;
+        }
+    }
+}

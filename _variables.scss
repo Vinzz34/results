@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+$ff: "Hanken Grotesk", sans-serif;
+$fs-normal: 1.125rem;
+$fs-large:3.25rem;
+$fw-normal: 500;
+$fw-bold: 700;
+$fw-bolder: 800;
+$red: hsl(0, 100%, 67%);
+$orange: hsl(39, 100%, 56%);
+$green: hsl(166, 100%, 37%);
+$blue: hsl(234, 85%, 45%);
+$white: hsl(0, 0%, 100%);
+$paleBlue: hsl(221, 100%, 96%);
+$lavender: hsl(241, 100%, 89%);
+$darkBlue: hsl(224, 30%, 27%);
+$backgroundGradient: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+$circleGradient: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
