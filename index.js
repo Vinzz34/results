@@ -4,6 +4,7 @@ let details = document.querySelectorAll(".right__details");
 
 let icon = document.createElement("img");
 icon.classList.add("right__logo");
+icon.setAttribute("alt", "");
 
 let total = document.createElement("span");
 total.textContent = " / 100";
