@@ -1,69 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <title>Frontend Mentor | Results summary component</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main class="main">
-    <div class="left">
-      <p class="left__heading">
-        Your Result
-      </p>
-      <div class="left__circle">
-        <h1 class="left__score">
-          76
-        </h1>
-        <p class="left__total">
-          of 100
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="left">
+        <p class="left__heading">Your Result</p>
+        <div class="left__circle">
+          <h1 class="left__score">76</h1>
+          <p class="left__total">of 100</p>
+        </div>
+        <h2 class="left__result">Great</h2>
+        <p class="left__para">
+          You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
-      <h2 class="left__result">
-        Great
-      </h2>
-      <p class="left__para">
-        You scored higher than 65% of the people who have taken these tests.
-      </p>
-    </div>
-    <div class="right">
-      <h3 class="right__heading">
-        Summary
-      </h3>
-      <div class="right__scores">
-        <div class="right__categories right__categories--reaction">
-          <div class="right__details">
-            <img src="./images/icon-reaction.svg" alt="reaction" class="right__logo">
-            <div class="right__text">Reaction</div>
+      <div class="right">
+        <h3 class="right__heading">Summary</h3>
+        <div class="right__scores">
+          <div class="right__categories right__categories--reaction">
+            <div class="right__details">
+              <div class="right__text"></div>
+            </div>
+            <div class="right__score"></div>
           </div>
-          <div class="right__score">80 <span class="right__total">/ 100</span></div>
-        </div>
-        <div class="right__categories right__categories--memory">
-          <div class="right__details">
-            <img src="./images/icon-memory.svg" alt="memory" class="right__logo">
-            <div class="right__text">Memory</div>
+          <div class="right__categories right__categories--memory">
+            <div class="right__details">
+              <div class="right__text"></div>
+            </div>
+            <div class="right__score"></div>
           </div>
-          <div class="right__score">92 <span class="right__total">/ 100</span></div>
-        </div>
-        <div class="right__categories right__categories--verbal ">
-          <div class="right__details">
-            <img src="./images/icon-verbal.svg" alt="verbal" class="right__logo">
-            <div class="right__text">Verbal</div>
+          <div class="right__categories right__categories--verbal">
+            <div class="right__details">
+              <div class="right__text"></div>
+            </div>
+            <div class="right__score"></div>
           </div>
-          <div class="right__score">61 <span class="right__total">/ 100</span></div>
-        </div>
-        <div class="right__categories right__categories--visual">
-          <div class="right__details">
-            <img src="images/icon-visual.svg" alt="visual" class="right__logo">
-            <div class="right__text">Visual</div>
+          <div class="right__categories right__categories--visual">
+            <div class="right__details">
+              <div class="right__text"></div>
+            </div>
+            <div class="right__score"></div>
           </div>
-          <div class="right__score">72 <span class="right__total">/ 100</span></div>
         </div>
+        <button class="right__button">Continue</button>
       </div>
-      <button class="right__button">Continue</button>
-    </div>
-  </main>
-</body>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
